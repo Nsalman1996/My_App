@@ -1,0 +1,50 @@
+{
+  "name": "profile_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "serve": "nodemon ./dist/server.js",
+    "build": "tsc",
+    "test": "nodemon src/server.ts --exec ts-node"
+  },
+  "author": "Salman",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.290.0",
+    "@aws-sdk/client-ses": "^3.295.0",
+    "@aws-sdk/client-sns": "^3.294.0",
+    "bcrypt": "^5.0.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "pg": "^8.10.0",
+    "random-string": "^0.2.0",
+    "redis": "^4.6.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/morgan": "^1.9.4",
+    "@types/multer": "^1.4.7",
+    "@types/mysql": "^2.15.21",
+    "@types/node": "^18.17.11",
+    "@types/passport": "^1.0.12",
+    "@types/passport-jwt": "^3.0.8",
+    "@types/pg": "^8.6.6",
+    "@types/uuid": "^9.0.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
